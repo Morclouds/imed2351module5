@@ -14,8 +14,7 @@ window.addEventListener('load', function() {changeBackground('green') });
     
 
 function check() {
-
-        var number = input.value;
+var number = input.value;
 var isPrime = true;
 let guess;
 let running = true;
@@ -29,6 +28,15 @@ else if (number > 1) {
     for (var i = 2; i < number/2; i++)
 {
 
+while (number > 100) {
+alert('Number needs to be less than 100');
+
+number++;
+break;
+
+}
+
+
 if (number % i == 0)
 {
     isPrime = false;
@@ -37,10 +45,10 @@ if (number % i == 0)
 }
 
 if (isPrime==true) {
-  alert(number+"\nis a prime number");
+  alert(number+ " is a prime number");
 }
 else{
-    alert(number+ "\nis not a prime number");
+    alert(number+ " is not a prime number");
 }
 }
 
