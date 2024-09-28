@@ -6,11 +6,14 @@ const welcome = "Hi this is a"
 const item = "prime number checker"
 console.log(`${welcome} ${item}`)
 
+function changeBackground(color)
+{
+    document.body.style.background = color;
+}
+window.addEventListener('load', function() {changeBackground('green') });
+    
 
-
-
-
-    function check() {
+function check() {
 
         var number = input.value;
 var isPrime = true;
